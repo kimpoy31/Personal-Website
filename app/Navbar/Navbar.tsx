@@ -14,7 +14,6 @@ const Navbar = () => {
                     <LuSquareCode size="24" />
                 </HStack>
             </Link>
-
             <ColorModeToggle />
         </HStack>
     </Container>

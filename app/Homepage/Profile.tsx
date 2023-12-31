@@ -4,8 +4,7 @@ import React from 'react'
 const Profile = () => {
   return (
     <Box
-     position="absolute" 
-     bottom="0"
+     position="relative" 
      display="flex" 
      alignItems="end" 
      justifyContent="center" 
@@ -22,7 +21,6 @@ const Profile = () => {
             top="50%"
         >
         </Box>
-
         <Box>
         <Img 
             src={"/pp.png"} 

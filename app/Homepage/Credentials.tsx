@@ -15,10 +15,10 @@ const Credentials = () => {
         display="flex" 
         flexDirection={{base:"column", md:"row"}}
         justifyContent="space-between" 
-        gap="8" 
+        gap="2rem" 
         w="full" 
         px={{base:"2", md:"16"}}
-        mt="8"
+        mt="2rem"
     >
         <Box maxW="450px">
             <FaQuoteLeft size="36" />
