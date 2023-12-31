@@ -5,6 +5,9 @@ import { ChakraComponentProvider } from './ChakraUi/providers'
 import { ColorModeScript } from '@chakra-ui/react'
 import theme from './ChakraUi/theme'
 
+// Components
+import Navbar from './Navbar/Navbar'
+
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
@@ -23,6 +26,7 @@ export default function RootLayout({
         <ColorModeScript initialColorMode={theme.config.initialColorMode} />
         <ChakraComponentProvider>
 
+          <Navbar />
           {children}
 
         </ChakraComponentProvider>
