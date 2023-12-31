@@ -1,11 +1,14 @@
 // app/providers.tsx
 'use client'
 
-import { ChakraProvider } from '@chakra-ui/react'
+import { ChakraProvider, createLocalStorageManager } from '@chakra-ui/react'
+import theme from './theme'
 
 export function ChakraComponentProvider({ children }: { children: React.ReactNode }) {
+  
+
   return (
-    <ChakraProvider>
+    <ChakraProvider theme={theme}>
       {children}
     </ChakraProvider> 
   )

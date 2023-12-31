@@ -1,9 +1,14 @@
-import { Button } from "@chakra-ui/react";
+"use client"
+import { Button, useColorMode } from "@chakra-ui/react";
 
 export default function Home() {
+  const { colorMode, toggleColorMode } = useColorMode()
+
   return (
     <div>
-      <Button>Hello</Button>
+      <Button onClick={toggleColorMode}>
+        Toggle {colorMode === 'light' ? 'Dark' : 'Light'}
+      </Button>
     </div>
   )
 }
