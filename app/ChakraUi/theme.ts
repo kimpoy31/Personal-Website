@@ -9,11 +9,12 @@ const config: ThemeConfig = {
 
 // 3. extend the theme
 const theme = extendTheme({
-   config,
-   fonts: {
+  config,
+  fonts: {
     // heading: `'Bungee', sans-serif`,
     heading: `'Righteous', sans-serif`,
   },
+  
 })
 
 export default theme

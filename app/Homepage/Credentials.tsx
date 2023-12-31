@@ -22,7 +22,7 @@ const Credentials = () => {
     >
         <Box maxW="450px">
             <FaQuoteLeft size="36" />
-            <Text mt="5">
+            <Text mt="5" fontSize="large">
                 Im a Web Developer with a Bachelors Degree in Information Technology.
                 My expertise is creating and maintaining websites using NextJs.
             </Text>

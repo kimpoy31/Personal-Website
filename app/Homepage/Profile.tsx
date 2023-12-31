@@ -26,7 +26,7 @@ const Profile = () => {
             src={"/pp.png"} 
             alt='Profile'
             zIndex="2"
-            maxW={{base:"280px", md:"400px"}}
+            maxW={{base:"280px", md:"340px"}}
         />
         </Box>
     </Box>
