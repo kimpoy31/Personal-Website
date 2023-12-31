@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
 import { ChakraComponentProvider } from './ChakraUi/providers'
-import { ColorModeScript } from '@chakra-ui/react'
+import { ColorModeScript, Container } from '@chakra-ui/react'
 import theme from './ChakraUi/theme'
 
 // Components
@@ -28,7 +28,7 @@ export default function RootLayout({
 
           <Navbar />
           {children}
-
+          
         </ChakraComponentProvider>
       </body>
     </html>

@@ -1,4 +1,4 @@
-import { Container, HStack, Text } from '@chakra-ui/react'
+import { Container, HStack, Heading, Text } from '@chakra-ui/react'
 import Link from 'next/link'
 import React from 'react'
 import { LuSquareCode } from "react-icons/lu";
