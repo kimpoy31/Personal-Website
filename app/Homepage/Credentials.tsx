@@ -4,10 +4,10 @@ import { FaQuoteLeft, FaInstagram, FaFacebookF,FaGithub,FaLinkedinIn  } from "re
 
 const Credentials = () => {
     const socials = [
-        {href:"#" ,icon: <FaFacebookF size="18" />},
-        {href:"#" ,icon: <FaInstagram size="18" />},
-        {href:"#" ,icon: <FaGithub  size="18" />},
-        {href:"#" ,icon: <FaLinkedinIn  size="18" />},
+        {href:"https://www.facebook.com/kimharold.pinanonang/" ,icon: <FaFacebookF size="18" />, },
+        {href:"https://www.instagram.com/notkimmpoy/" ,icon: <FaInstagram size="18" />},
+        {href:"https://github.com/kimpoy31" ,icon: <FaGithub  size="18" />},
+        {href:"https://www.linkedin.com/in/kim-harold-pinanonang-a2ab8b280/" ,icon: <FaLinkedinIn  size="18" />},
     ]
 
   return (
