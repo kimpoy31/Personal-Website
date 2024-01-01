@@ -15,12 +15,14 @@ const Projects = () => {
                 size={{base:"sm", md:"lg"}}
             >
                 <CardBody>
-                    <Image
-                        objectFit='cover'
-                        maxW={{ base: '100%', md:'300px' }}
-                        src='/issue-tracker.png'
-                        alt='Caffe Latte'
-                    />
+                    <Link href="https://issue-tracker-v2.vercel.app/" target='_blank' className="shadow-lg">
+                        <Image
+                            objectFit='cover'
+                            maxW={{ base: '100%', md:'300px' }}
+                            src='/issue-tracker.png'
+                            alt='Caffe Latte'
+                        />
+                    </Link>
                 </CardBody>
                 <CardFooter>
                     <VStack align="start">
@@ -49,7 +51,7 @@ const Projects = () => {
 }
 
 const tools = [
-    "NextJs","Typescript","Prisma","MySql","RadixUi","Zod","Hot-Toast","SimpleMDE",
+    "NextJs","Typescript","Prisma","MySql","TailwindCss","RadixUi","Zod","Hot-Toast","SimpleMDE",
 ]
 
 export default Projects
