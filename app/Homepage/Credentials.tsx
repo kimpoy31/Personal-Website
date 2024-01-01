@@ -1,4 +1,5 @@
 import { Box, Button, Divider, Heading, Text } from '@chakra-ui/react'
+import Link from 'next/link';
 import React from 'react'
 import { FaQuoteLeft, FaInstagram, FaFacebookF,FaGithub,FaLinkedinIn  } from "react-icons/fa";
 
@@ -33,9 +34,11 @@ const Credentials = () => {
             <Divider mb="2" />
             <Box display="flex" gap="1">
                 {socials.map((social,index) => 
-                <Button variant="outline" color="tomato" key={index}>
-                    {social.icon}
-                </Button>
+                <Link key={index} href={social.href} target='_blank'>
+                    <Button variant="outline" color="tomato">
+                        {social.icon}
+                    </Button>
+                </Link>
                 )}
             </Box>
         </Box>
