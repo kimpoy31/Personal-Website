@@ -9,6 +9,7 @@ const About = () => {
       maxW="full" 
       py="6" 
       px={{base:"2", md:"16"}}
+      bg="RGBA(0, 0, 0, 0.08)" 
     >
         <Heading fontSize="xxx-large" mb="6">About Me</Heading>
         <Box display="flex" gap="2" maxW="full" flexDirection={{base:"column-reverse", md:"row"}}>

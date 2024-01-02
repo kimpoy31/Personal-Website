@@ -15,7 +15,6 @@ const Footer = () => {
   return (
     <Container 
     maxW="full" 
-    bg="RGBA(0, 0, 0, 0.08)" 
     px={{base:"2", md:"16"}}
     py="8"
     centerContent
