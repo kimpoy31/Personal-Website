@@ -8,7 +8,7 @@ import { BiLogoMongodb } from "react-icons/bi";
 
 const SkillsPage = () => {
   return (
-    <Container py="2rem" maxW="full" px={{base:"2", md:"16"}}>
+    <Container pt="2rem" pb="6rem" maxW="full" px={{base:"2", md:"16"}} bg="RGBA(0, 0, 0, 0.08)" >
       <Heading fontSize="xxx-large" mb="6">Skills</Heading>
       <Box
         display="flex"
