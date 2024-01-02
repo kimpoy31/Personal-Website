@@ -5,7 +5,7 @@ import { TiArrowBack  } from "react-icons/ti";
 
 const Projects = () => {
   return (
-    <Container py="2rem" maxW="full" px={{base:"2", md:"16"}} bg="blackAlpha.200" >
+    <Container pt="2rem" pb="4rem" maxW="full" px={{base:"2", md:"16"}} bg="blackAlpha.200" >
         <Heading fontSize="xxx-large" mb="6">Projects</Heading>
         <Container maxW="full" centerContent>
             <Card

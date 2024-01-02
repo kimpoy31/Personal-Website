@@ -7,7 +7,8 @@ const About = () => {
   return (
     <Container 
       maxW="full" 
-      py="6" 
+      pt="2rem" 
+      pb="4rem"
       px={{base:"2", md:"16"}}
       bg="blackAlpha.200" 
     >
