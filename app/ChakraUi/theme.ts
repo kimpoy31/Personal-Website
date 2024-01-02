@@ -14,7 +14,11 @@ const theme = extendTheme({
     // heading: `'Bungee', sans-serif`,
     heading: `'Righteous', sans-serif`,
   },
-  
+  colors:{
+    blackAlpha: {
+      200: "RGBA(0, 0, 0, 0.08)",
+    }
+  }
 })
 
 export default theme

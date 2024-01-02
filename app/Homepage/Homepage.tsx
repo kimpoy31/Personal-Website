@@ -6,7 +6,7 @@ import Credentials from './Credentials'
 
 const Homepage = () => {
   return (
-    <Container maxW="xxl" display="flex" flexDirection="column">
+    <Container maxW="xxl" display="flex" flexDirection="column" pt="3rem">
         <Box w="full" display="flex" flexDirection='column' alignItems="center">
           <Heading fontSize="10vw">Im <Text as="span" color='tomato'>Kim</Text>,</Heading>
           <Heading fontSize="12vw">Web Developer</Heading>

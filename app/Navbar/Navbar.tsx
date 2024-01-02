@@ -6,7 +6,7 @@ import ColorModeToggle from './ColorModeToggle';
 
 const Navbar = () => {
   return (
-    <Container maxW="xxl" py="4" px={{base:"2", md:"16"}}>
+    <Container maxW="xxl" py="4" px={{base:"2", md:"16"}} position="fixed" bg="inherit" zIndex="99"> 
         <HStack justify="space-between">
             <Link href="/">
                 <HStack gap="0">
