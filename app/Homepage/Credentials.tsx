@@ -13,7 +13,7 @@ const Credentials = () => {
     ]
 
     const sendEmail = () => {
-    const email = 'pinanonangk@gmail.com'; // Replace with your actual email address
+    const email = 'pinanonangkim000@gmail.com'; // Replace with your actual email address
     const subject = 'Hiring Request for Kim Harold';
     const body = '';
 
