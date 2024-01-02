@@ -1,4 +1,4 @@
-import { Box, Button, Divider, HStack, Heading, Highlight, Text, Tooltip, VStack } from '@chakra-ui/react'
+import { Box, Button, Divider, HStack, Heading, Highlight, Stack, Text, Tooltip, VStack } from '@chakra-ui/react'
 import Link from 'next/link';
 import React from 'react'
 import { FaQuoteLeft, FaInstagram, FaFacebookF,FaGithub,FaLinkedinIn  } from "react-icons/fa";
@@ -39,16 +39,17 @@ const Credentials = () => {
             </Text>
         </Box>
         <Box display="flex" flexDirection="column" alignItems={{base:"start", md:"end"}} >
-            <HStack>
-            <Tooltip label="pinanonangkim000@gmail.com" aria-label='A tooltip'>
-                <Button 
-                    rightIcon={<SiGmail />} 
-                    colorScheme='red' 
-                    variant='solid' 
-                    onClick={()=>sendEmail()}
-                >Email</Button>
-             </Tooltip>
-                <Heading color="tomato">Hire Me</Heading></HStack>
+            <HStack flexDirection={{base:"row-reverse", md:"row"}}>
+                <Tooltip label="pinanonangkim000@gmail.com" aria-label='A tooltip'>
+                    <Button 
+                        rightIcon={<SiGmail />} 
+                        colorScheme='red' 
+                        variant='solid' 
+                        onClick={()=>sendEmail()}
+                    >Email</Button>
+                </Tooltip>
+                <Heading color="tomato">Hire Me</Heading>
+            </HStack>
             <Text>Follow me on my socials</Text>
             <Divider mb="2" />
             <Box display="flex" gap="1">
