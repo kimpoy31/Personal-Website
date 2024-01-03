@@ -1,4 +1,4 @@
-import { Box, Button, Card, CardBody, Container, Heading, Img, Text, VStack } from '@chakra-ui/react'
+import { Box, Button, Card, CardBody, Container, Heading, Img, Show, Text, VStack } from '@chakra-ui/react'
 import Link from 'next/link';
 import React from 'react'
 import { IoMdArrowRoundBack } from "react-icons/io";
@@ -16,14 +16,14 @@ const NotFoundPage = () => {
                         <Button 
                             leftIcon={<IoMdArrowRoundBack />} 
                             colorScheme='red' 
-                            variant='outline'
+                            variant='solid'
                         >Back to Homepage</Button>
                     </Link>
                 </VStack>
             </Box>
         </Box>
-        <Box position="absolute" left="0" bottom="0">
-            <Img src='/frog.png' maxH="500px" />
+        <Box position="absolute" left="0" bottom="0" zIndex="-1">
+            <Img src='/frog.png' maxH={{base:"380px", md:"500px"}} />
         </Box>
     </Container>
   )
