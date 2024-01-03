@@ -36,7 +36,7 @@ const NotFoundPage = () => {
                 width="100%" 
                 display="flex" 
                 justifyContent="center"
-                transform="translate(50%, 0)"
+                transform="translate(50%, 100%)"
             >
                 <Img src='/mike.png' maxH={{base:"380px", md:"500px"}} />
             </Box>
