@@ -1,11 +1,11 @@
-import { Box, Button, Card, CardBody, Container, Heading, Img, Show, Text, VStack } from '@chakra-ui/react'
+import { Box, Button, Container, Heading, Hide, Img, Show, Text, VStack } from '@chakra-ui/react'
 import Link from 'next/link';
 import React from 'react'
 import { IoMdArrowRoundBack } from "react-icons/io";
 
 const NotFoundPage = () => {
   return (
-    <Container maxW="xxx-large" height="100vh" display='flex' justifyContent="end">
+    <Container maxW="xxx-large" height={{base:"max-content", md:"100vh"}} display='flex' justifyContent="end" >
         <Box pt={{base:"4rem", md:"0"}} width={{base:"100%", md:"50%"}} display="flex" justifyContent="center" alignItems={{base:"start",md:"center"}}>
             <Box>
                 <Text fontSize={{base:"6vw", md:"3vw"}}>Oops!</Text>
@@ -22,9 +22,25 @@ const NotFoundPage = () => {
                 </VStack>
             </Box>
         </Box>
-        <Box position="absolute" left="0" bottom="0" zIndex="-1">
-            <Img src='/frog.png' maxH={{base:"380px", md:"500px"}} />
-        </Box>
+        <Hide below='md'>
+            <Box position="absolute" left="0" bottom="0" zIndex="-1">
+                <Img src='/frog.png' maxH={{base:"380px", md:"500px"}} />
+            </Box>
+        </Hide>
+        <Show below='md'>
+            <Box 
+                position="absolute" 
+                left="0" 
+                bottom="0" 
+                zIndex="-1" 
+                width="100%" 
+                display="flex" 
+                justifyContent="center"
+                transform="translate(50%, 0)"
+            >
+                <Img src='/mike.png' maxH={{base:"380px", md:"500px"}} />
+            </Box>
+        </Show>
     </Container>
   )
 }
