@@ -13,12 +13,17 @@ const Credentials = () => {
     ]
 
     const sendEmail = () => {
-    const email = 'pinanonangkim000@gmail.com'; // Replace with your actual email address
-    const subject = 'Hiring Request for Kim Harold';
-    const body = '';
+        const email = 'pinanonangkim000@gmail.com'; // Replace with your actual email address
+        const subject = 'Hiring Request for Kim Harold';
+        const body = '';
 
-    const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-    window.open(mailtoLink, '_blank');
+        const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        window.open(mailtoLink, '_blank');
+    }
+
+    const openResume = () => {
+        const pdfUrl = "/resume.pdf";
+        window.open(pdfUrl, '_blank');
     }
 
   return (
@@ -39,19 +44,31 @@ const Credentials = () => {
             </Text>
         </Box>
         <Box display="flex" flexDirection="column" alignItems={{base:"start", md:"end"}} >
-            <HStack flexDirection={{base:"row-reverse", md:"row"}}>
-                <Tooltip label="pinanonangkim000@gmail.com" aria-label='A tooltip'>
-                    <Button 
-                        rightIcon={<SiGmail />} 
-                        colorScheme='red' 
-                        variant='solid' 
-                        onClick={()=>sendEmail()}
-                    >Email</Button>
-                </Tooltip>
-                <Heading color="tomato">Hire Me</Heading>
-            </HStack>
-            <Text>Follow me on my socials</Text>
-            <Divider mb="2" />
+            <Box display="flex" flexDirection={{base:"column-reverse", md:"row"}} alignItems={{base:"start", md:"center"}}>
+                <Stack direction="row" gap='2' mx={{base:"0", md:"2"}}>
+                    <Tooltip label="pinanonangkim000@gmail.com" aria-label='A tooltip'>
+                        <Button 
+                            rightIcon={<SiGmail />} 
+                            colorScheme='red' 
+                            variant='solid' 
+                            onClick={()=>sendEmail()}
+                            size="sm"
+                        >Email</Button>
+                    </Tooltip>
+                    <Tooltip label="Resume" aria-label='A tooltip'>
+                        <Button 
+                            colorScheme='red' 
+                            variant='link' 
+                            onClick={()=>openResume()}
+                            size="sm"
+                        >Resume</Button>
+                    </Tooltip>
+                </Stack>
+                <Box>
+                    <Heading color="tomato">Hire&nbsp;Me</Heading>
+                </Box> 
+            </Box>
+            <Divider my="2" />
             <Box display="flex" gap="1">
                 {socials.map((social,index) => 
                 <Link key={index} href={social.href} target='_blank'>
